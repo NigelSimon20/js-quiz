@@ -15,5 +15,11 @@ Examples:(Input --> Output)
 5 --> 1 + 1/4 + 1/7 + 1/10 + 1/13 --> "1.57"`
 
 module.exports = function SeriesSum(n) {    
-    return ((n + 1/2) * n)
+    let sum = 0;
+    let denominator = 1
+    for (i = 0; i < n; i++) {
+        sum += (1/denominator);
+        denominator += 3;
+    }
+    return sum.toFixed(2)
 };
