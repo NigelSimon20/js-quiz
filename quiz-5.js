@@ -9,5 +9,6 @@ Sum: (10 - 2) + (2 - 1) = 8 + 1 = 9
 If the array is empty or the array has only one element the result should be 0.`
 
 module.exports = function sumOfDifferences(arr) {
-    return "Hello World!";
+    arr.reverse();
+    return (arr[0] - arr[1]) + (arr[1] - arr[2])
 };
