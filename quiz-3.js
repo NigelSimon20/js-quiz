@@ -17,5 +17,5 @@ Examples:
 "####################################man!"`
 
 module.exports = function maskify(cc) {
-    return "Hello World!";
+    return cc.slice(0, -4).replace(/./g, '#') + cc.slice(-4);
 };
